@@ -10,82 +10,6 @@ body{
     box-sizing: border-box;
 }
 
-
-
-
-
-
-
-.max-galery-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70vw;
-    padding: 25px;
-       
-}
-
-
-
-
-.max-galery-h2{
-}
-
-
-.background{
-    height: 600px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    background-color: red;
-}
-
-.img1{
-    background-image: url('images/backgroung-img1.jpg');
-}
-
-.img2{
-    background-image: url('images/backgroung-img2.jpg');
-}
-
-.img3{
-    background-image: url('images/backgroung-img3.jpg');
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .logo-up{
     font-size: 55px;
     position: absolute;
@@ -266,8 +190,7 @@ body{
 .galeria,
 .text-box,
 .article,
-.article .about,
-.max-galery-container{
+.article .about{
     display: flex;
     align-content: center;
     justify-content: center;    
@@ -280,9 +203,6 @@ body{
 flex-direction: column;
 }
 
-.max-galery-container{
-flex-direction: row;
-}
 
 .logo-up,
 .article .about .h2-about,
@@ -291,7 +211,8 @@ flex-direction: row;
 .article .about .read a,
 .galeria .p-galeria,
 .text-box .head,
-.text-box .text::before{
+.text-box .text::before,
+.max-galery-h2{
     font-family: 'Give You Glory', cursive;
 }
 
@@ -308,6 +229,43 @@ flex-direction: row;
 .galeria .p-galeria{
     text-align: center;
 }
+
+.max-galery-container{    
+    margin-left: auto;
+    margin-right: auto;
+    width: 70vw;
+    padding: 25px;       
+}
+
+.p-max-galery{
+    text-indent: 45px;   
+}
+
+.max-galery-h2{
+    font-size: 25px;
+    border-bottom: 1px dashed #0d3647
+}
+
+.background{
+    height: 650px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;     
+}
+
+.background img1{
+    margin-top: 35px;
+}
+
+.img2{
+    background-image: url('images/backgroung-img2.jpg');
+}
+
+.img3{
+    background-image: url('images/backgroung-img3.jpg');
+}
+
 
 @media screen and (min-width: 640px) {
     
@@ -338,7 +296,7 @@ flex-direction: row;
     }
 
     .text-box{
-        background-image: url("images/krz1.jpg");
+        background-image: url("images/krzy3.jpg");
         opacity: 0.8;
         width: 850px;
         margin-top: 25px;
@@ -352,7 +310,7 @@ flex-direction: row;
     }
 
     .text-box .text{    
-        margin-top: 80px;
+        margin-top: 90px;
         margin-left: 30px;
         padding: 20px;
     }
@@ -373,3 +331,4 @@ flex-direction: row;
     }
 
  
+}
