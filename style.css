@@ -1,0 +1,299 @@
+body{
+    background-color: #bcc7c4;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    color: #0d3647;
+}
+*{
+    box-sizing: border-box;
+}
+
+.logo-up{
+    font-size: 55px;
+    position: absolute;
+}
+
+.nav-top{    
+    min-height: 100px;
+    padding: 10px;      
+}
+
+.nav-top .ul-menu li{
+   list-style: none;
+   padding: 2px;
+   font-size: 15px;  
+   text-align: center;  
+   letter-spacing: 3px;   
+}
+
+.nav-top .ul-menu li a{
+    color: #072c2e;
+    text-decoration: none;
+    
+}
+
+.nav-top .ul-menu li a:hover{
+    border-bottom: 1px dashed #072c2e;
+    background-color: #e1f0f0;   
+}
+
+.article{
+    flex-wrap: wrap;
+    margin-top: 25px;            
+}
+
+.article .about{
+    font-size: 15px;
+}
+
+.article .about .h2-about{
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+
+.article .about .h2-about::after{
+    content: "";
+    display: block;
+    border-bottom: 1px dashed #0d3647;
+    width: 90%;
+    height: 1px;    
+}
+
+.article .about,
+.article .photo{
+    width: 400px;
+    height: 550px;
+    padding: 35px;
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+.article .photo img{
+    width: 330px;
+    padding: 0;
+    border: 15px solid #f4f8f7;   
+}
+
+.article .photo img:hover{
+    opacity: 0.6;
+}
+
+.article .photo .h2-photo{   
+    font-size: 15px;
+}
+
+.article .about::before{
+    content: "*";
+    font-size: 45px;   
+}
+
+.article .about .read{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 5px;
+    width: auto;        
+}
+
+.article .about .read a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #199fa2;
+    border-bottom: 1px dashed #199fa2;
+}
+
+.article .about .read a:hover{
+    color: #c3f1f2;
+    border-bottom: 1px dashed #c3f1f2;
+}
+
+.galeria{
+    width: 300px;      
+}
+
+.galeria .photo-box{
+    background-color: #f4f8f7;
+    width: 268px;
+    height: 315px; 
+    margin-left: 9px;
+    margin-right: 9px; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;     
+}
+
+.galeria .photo{
+    overflow: hidden;
+}
+
+.galeria .photo img{
+   border: 1px dashed #082531;
+   transition: all 0.5s ease-in-out;
+}
+
+.galeria .photo,
+.galeria .photo img{
+    width: 250px;
+    height: 250px;
+}
+
+.galeria .photo img:hover{
+    -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    transform: scale(1.15);
+}
+
+.galeria .p-galeria{
+    font-size: 18px;
+    margin-top: 11px;
+}
+
+.text-box{
+    background-color: #082531;
+    opacity: 0.5;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    padding: 10px;
+    color: white;
+}
+
+.text-box .head{
+    font-size: 30px;
+    padding: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: white;
+}
+
+.text-box .text{
+    font-size: 12px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+
+.text-box .text::before{
+    content: "*";
+    font-size: 45px;
+    color: white;
+}
+
+.logo-up,
+.nav-top,
+.article .about,
+.article .photo{
+    background-color: #e1efeb;
+}
+
+.nav-top .ul-menu,
+.galeria,
+.text-box,
+.article,
+.article .about,
+.max-galery-container{
+    display: flex;
+    align-content: center;
+    justify-content: center;    
+}
+
+.nav-top .ul-menu,
+.galeria,
+.article .about,
+.text-box{
+flex-direction: column;
+}
+
+.max-galery-container{
+flex-direction: row;
+}
+
+.logo-up,
+.article .about .h2-about,
+.article .photo .h2-photo,
+.article .about::before,
+.article .about .read a,
+.galeria .p-galeria,
+.text-box .head,
+.text-box .text::before{
+    font-family: 'Give You Glory', cursive;
+}
+
+.article .photo img,
+.galeria,
+.text-box,
+.text-box .text{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.article .photo img,
+.article .about .read a,
+.galeria .p-galeria{
+    text-align: center;
+}
+
+@media screen and (min-width: 640px) {
+    
+    .article{
+        display: flex;
+        flex-direction: row-reverse;        
+    }
+
+    .nav-top .ul-menu{
+        margin-top: 25px;   
+    }
+
+    .nav-top .ul-menu li{
+        margin-left: 10px;
+        margin-right: 10px;            
+    }
+
+    .nav-top .ul-menu li a:hover{
+        border-bottom: 1px dashed #072c2e;
+        background-color: #e7fafa;
+        padding: 10px;    
+    }
+
+    .galeria,
+    .text-box{
+        margin-right: auto;
+        margin-left: auto;            
+    }
+
+    .text-box{
+        background-image: url("images/krz1.jpg");
+        opacity: 0.8;
+        width: 850px;
+        margin-top: 25px;
+        margin-bottom: 15px;
+        padding: 20px;    
+        color: white;
+    }
+
+    .text-box .head{
+        border-right: 1px dashed #c5c5c5;
+    }
+
+    .text-box .text{    
+        margin-top: 80px;
+        margin-left: 30px;
+        padding: 20px;
+    }
+
+    .nav-top .ul-menu,
+    .galeria,
+    .text-box{
+        display: flex;
+        flex-direction: row;    
+        align-content: center;
+        justify-content: center;
+    }
+
+    .galeria,
+    .text-box{
+        margin-right: auto;
+        margin-left: auto;            
+    }
+
+ 
